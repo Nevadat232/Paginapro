@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="top-nav">
+        <div class="logo">NVAD</div>
+        <ul class="nav-links">
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#lanzamientos">Próximos Lanzamientos</a></li>
+            <li><a href="#" id="open-wishlist">Lista de Deseos</a></li>
+        </ul>
+        <div class="cart-icon">
+            🛒 <span class="cart-count">0</span>
+        </div>
+        <div class="profile-icon" id="open-login" title="Mi Perfil">👤</div>
+    </nav>
+
+    <header class="hero">
+        <div class="video-background-container">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="videos/MENUPRINCIPAL.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content reveal">
+            <h1>EL SIGUIENTE NIVEL</h1>
+            <p>Descubre nuestro catálogo de juegos, expansiones y modificaciones.</p>
+            <a href="#catalogo" class="btn">Explorar Catálogo</a>
+        </div>
+    </header>
+
+    <main id="catalogo">
+        <section class="product-section">
+            <div class="video-background-container">
+                <video autoplay muted loop playsinline class="bg-video">
+                    <source src="videos/CALLOFDUTY.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="product-info reveal">
+                <span class="badge-sale">OFERTA -30%</span>
+                <h2>Call of Duty: Black Ops III</h2>
+                <h3>Custom Zombie Maps Collection</h3>
+                <p>Sobrevive a hordas interminables en mapas diseñados desde cero.</p>
+                <div class="price-box">
+                    <span class="price-old">$25.000 CLP</span>
+                    <span class="price-current">$17.500 CLP</span>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-outline">Detalles</button>
+                    <button class="btn-buy">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-image reveal image-delay">
+                <div class="interactive-media">
+                    <button class="wishlist-btn" title="Agregar a Lista de Deseos">🤍</button>
+                    <div class="front-img" style="background-image: url('imagenes/OFERTA_BLACKOPS.jpg');"></div>
+                    <video class="hover-video" loop playsinline>
+                        <source src="videos/BLACKOPS3_VOLUMEN.mp4" type="video/mp4">
+                    </video>
+                    <button class="volume-btn">🔇</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section reverse">
+            <div class="video-background-container">
+                <video autoplay muted loop playsinline class="bg-video">
+                    <source src="videos/RESIDENTEVIL_4.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="product-info reveal">
+                <span class="badge-sale">OFERTA -20%</span>
+                <h2>Resident Evil 4 Remake</h2>
+                <h3>Survival Horror Overhaul</h3>
+                <p>Experimenta el terror de supervivencia con gráficos mejorados.</p>
+                <div class="price-box">
+                    <span class="price-old">$30.000 CLP</span>
+                    <span class="price-current">$24.000 CLP</span>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-outline">Detalles</button>
+                    <button class="btn-buy">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-image reveal image-delay">
+                <div class="interactive-media">
+                    <button class="wishlist-btn" title="Agregar a Lista de Deseos">🤍</button>
+                    <div class="front-img" style="background-image: url('imagenes/RESIDENT_EVIL4.jpg');"></div>
+                    <video class="hover-video" loop playsinline>
+                        <source src="videos/RESIDENTEVIL_4.mp4" type="video/mp4">
+                    </video>
+                    <button class="volume-btn">🔇</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="video-background-container">
+                <video autoplay muted loop playsinline class="bg-video">
+                    <source src="videos/stardew-trailer.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="product-info reveal">
+                <h2>Stardew Valley</h2>
+                <h3>Farm & Town Expansion Pack</h3>
+                <p>Lleva tu granja al siguiente nivel.</p>
+                <div class="price-box">
+                    <span class="price-current">$12.500 CLP</span>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-outline">Detalles</button>
+                    <button class="btn-buy">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-image reveal image-delay">
+                <div class="interactive-media">
+                    <button class="wishlist-btn" title="Agregar a Lista de Deseos">🤍</button>
+                    <div class="front-img" style="background-image: url('imagenes/stardew-valley.jpg');"></div>
+                    <video class="hover-video" loop playsinline>
+                        <source src="videos/stardew-trailer.mp4" type="video/mp4">
+                    </video>
+                    <button class="volume-btn">🔇</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-box">
+            <button id="close-login">✖</button>
+            <h2 id="login-title">Iniciar Sesión</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña (J123456)" required>
+                <button type="submit" class="btn-buy">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="wishlist-overlay" id="wishlist-overlay"></div>
+    <div class="wishlist-sidebar" id="wishlist-sidebar">
+        <div class="wishlist-header">
+            <h2>Tus Deseos</h2>
+            <button id="close-wishlist">✖</button>
+        </div>
+        <div class="wishlist-content" id="wishlist-content">
+            <p class="empty-msg">Aún no tienes juegos en tu lista.</p>
+        </div>
+        <div class="wishlist-footer" id="wishlist-footer">
+            <div class="wishlist-total">
+                <span>Total Estimado:</span>
+                <span id="wishlist-total-price">$0 CLP</span>
+            </div>
+            <button id="buy-all-wishlist" class="btn-buy-all">Que se cumpla</button>
+        </div>
+    </div>
+
+    <footer class="footer reveal">
+        <p>&copy; 2026 NVAD. Todos los derechos al dueño de la pagina jaja...</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
